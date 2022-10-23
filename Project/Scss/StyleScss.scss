@@ -1,6 +1,7 @@
 $color_red:red;
 $color_blue:blue;
 $font:25px;
+$Roboto_Slab: 'Roboto Slab', cursive;
 
 
 
@@ -8,6 +9,8 @@ $font:25px;
     color:$color_red;
     font-size: $font;
     padding: 0px 200px 0px 200px;
+    font-family: 'Open Sans', sans-serif;
+    
 }
 .container__card{
     display: flex;
@@ -23,6 +26,31 @@ $font:25px;
     // padding: 50px;
     margin-left: 100px ;
 }
+.card_:hover{
+    cursor: pointer;
+    background-color: coral;
+    border: 1px solid rgb(200, 101, 239);
+    border-radius: 30px;
+    box-shadow: 1px 4px 5px 3px rgb(150, 148, 148);
+}
+// .card_:active{
+//     cursor: pointer;
+//     background-color: coral;
+//     border: 1px solid rgb(200, 101, 239);
+// }
 .carusel_card{
     height: 1100px;
+}
+.container__card_1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    }
+
+@media only screen and (max-width: 1000px) {
+      .container__card_1{
+        background-color: black;
+        color: white;
+      }
 }
